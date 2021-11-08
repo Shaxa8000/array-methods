@@ -10,7 +10,7 @@ const companies = [
   { name: 'Company nine', category: 'Retail', start: 1981, end: 1989 },
 ];
 
-// const ages [34, 23, 41, 32, 2, 5, 21, 26]
+const ages = [34, 23, 41, 32, 2, 5, 21, 26]
 
 // // FOR EACH:
 
@@ -86,7 +86,7 @@ const companies = [
 
 
 // << example with ages arr>>
-const ages = [34, 23, 41, 32, 2, 5, 21, 26];
+// const ages = [34, 23, 41, 32, 2, 5, 21, 26];
 
 
 // const agesSquare = ages.map((age) => parseInt(Math.sqrt(age)));
@@ -123,14 +123,17 @@ const ages = [34, 23, 41, 32, 2, 5, 21, 26];
 
 // shorter way
 
-// const sortedCompanies = companies.sort((a, b) => (a.start > b.start ? 1 : -1 ))
+// const sortedCompanies = companies.sort((a, b) => (a.start > b.start ? 1 : -1))
 
 // console.log(sortedCompanies)
 
 
 //<< sort ages>>
 
-// const sortAges = ages.sort((a, b) => a - b);
+
+  // const sortAges = ages.sort((a, b) => a - b);
+  // console.log(sortAges);
+
 
 // console.log(sortAges);
 
@@ -176,7 +179,118 @@ const ages = [34, 23, 41, 32, 2, 5, 21, 26];
 //     .reduce((a, b) => a + b, 0);
 
 // console.log(combined);
-  
+
+// const arr = [3, 5, 7, 2, 5, 78, 67, 1, 8, 9];
+
+// arr.forEach(function (el) {
+//   if (el % 2 !== 0) {
+//     console.log(el)
+//   }
+// })
+
+//map
+
+// const newMap = arr.map(num => num * 2);
+
+// console.log(newMap);
+
+
+
+// ANOTHER CHALLENGE 
+
+// const user = [
+//  {
+//   name: 'Eshmat',
+//   year: 2011,
+//   id: 1,
+//   status: 'student',
+//   key: 'test',
+// },
+
+// {
+//   name: 'Eshmat akasi',
+//   year: 2012,
+//   id: 2,
+//   status: 'programmer',
+//   key: 'test',
+// },
+
+// {
+//   name: 'Toshmat',
+//   year: 2010,
+//   id: 3,
+//   status: 'student',
+//   key: "test",
+// }
+// ]
+
+//<< Deleting object with current id>>>
+
+
+// const onDelete = id => user.filter(value => value.id !== id);
+// console.log(onDelete(2));
+
+
+//<<< sorting by year>>>
+
+// const userSort = user.sort(function (a, b) {
+//   if (a.year > b.year) {
+//     return 1
+//   } else {
+//     return -1
+//   }
+// })
+
+// console.log(userSort);
+
+
+// <<< sorting by name>>>
+
+// const sortName = user.filter(function (value) {
+//   if (value.name === 'Eshmat') {
+//     return value;
+//   }
+// })
+
+// console.log(sortName);
+
+
+//<<< filtering by the status>>
+
+// const filterStatus = user.filter(value => value.status === 'student');
+
+// console.log(filterStatus);
+
+
+//<<< Calling by key and name>>>    FILTER ADVANCED
+
+// const filterAdvanced = (key, value) => {
+//   const res = [];
+//   user.map(val => {
+//     if (val[key].includes(value)) {
+//       for (const kalit in val) {
+//         if (kalit === key) {
+//           res.push(val)
+//         }
+//       }
+//     }
+//   })
+//   return res;
+// };
+
+// console.log(filterAdvanced('name', "Eshmat"));
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
