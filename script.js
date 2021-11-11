@@ -281,31 +281,33 @@ const ages = [34, 23, 41, 32, 2, 5, 21, 26]
 // console.log(filterAdvanced('name', "Eshmat"));
 
 
+// <<< ARRAY DESTRUCTURING>>>
+
+const alphabet = ['A', 'B', 'C', 'D', 'E', 'F'];
+
+const numbers = ['1', '2', '3', '4', '5', '6'];
+
+// const a = alphabet[0];
+// const b = alphabet[1];
+
+// console.log(a); => A
+// console.log(b); => B
+
+
+// << destr>>
+
+// const [a, b] = alphabet;
+
+// console.log(a); => A
+// console.log(b); => B
 
 
 
+//<<< SPREAD OPERATOR>>>
 
+// const newArray = [...alphabet, ...numbers];
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// console.log(newArray); => adds alphabet and numbers.
 
 
 
